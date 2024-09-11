@@ -1,0 +1,9 @@
+{
+  "download_url": "https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip",
+  "zip_file_path": "maa_resource.zip",
+  "extract_file_path": "MAA",
+  "maa_path": "C:\\Users\\RiwiHow\\AppData\\Local\\Programs\\MAA",
+  "github_status": {
+    "latest_commit": "d172fa4bf8b8f89f6d2f9be1c54e7df4fc6b1160"
+  }
+}

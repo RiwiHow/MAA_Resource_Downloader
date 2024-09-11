@@ -1,0 +1,18 @@
+[project]
+name = "MAA_Resource_Downloader"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "RiwiHow", email = "53964574+RiwiHow@users.noreply.github.com"},
+]
+dependencies = [
+    "requests>=2.32.3",
+    "plyer>=2.1.0",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
