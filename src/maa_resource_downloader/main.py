@@ -7,7 +7,7 @@ import extract
 import read_path
 import check_status
 
-paths = read_path.read_path("paths.json")
+paths = read_path.read_path("config.json")
 
 download_url = paths["download_url"]
 downloaded_zip_path = paths["zip_file_path"]

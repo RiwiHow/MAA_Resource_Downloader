@@ -3,7 +3,7 @@ import json
 import os
 from plyer import notification
 
-JSON_FILE = "paths.json"
+JSON_FILE = "config.json"
 
 def get_latest_commit():
     url = "https://api.github.com/repos/MaaAssistantArknights/MaaResource/branches/main"
