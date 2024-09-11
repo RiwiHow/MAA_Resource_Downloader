@@ -3,7 +3,8 @@
   "zip_file_path": "maa_resource.zip",
   "extract_file_path": "MAA",
   "maa_path": "C:\\Users\\RiwiHow\\AppData\\Local\\Programs\\MAA",
+  "annihilation_notification": true,
   "github_status": {
-    "latest_commit": "d172fa4bf8b8f89f6d2f9be1c54e7df4fc6b1160"
+    "latest_commit": "65824210df31bc2eeb3dede88cf7b01e893bf1a4"
   }
 }

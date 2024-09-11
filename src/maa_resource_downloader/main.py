@@ -6,6 +6,7 @@ import subprocess
 import extract
 import read_path
 import check_status
+import notification
 
 paths = read_path.read_path("config.json")
 
@@ -25,4 +26,5 @@ if check_status.check_status():
     os.remove(downloaded_zip_path)
     shutil.rmtree(extract_path)
 
+notification.annihilation_notification()
 subprocess.run([maa_exe_path])
