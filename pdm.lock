@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:2cf4589158ebcf6a50ff93feaa70b39cfc08761560bc16305a178edac84334b1"
+content_hash = "sha256:16c3eae672d571fb8ca27685529ef0144befaa9a851db7558484be07364bf39a"
 
 [[metadata.targets]]
 requires_python = "==3.12.*"
@@ -48,6 +48,103 @@ files = [
 ]
 
 [[package]]
+name = "cx-freeze"
+version = "7.2.1"
+requires_python = ">=3.8"
+summary = "Create standalone executables from Python scripts"
+groups = ["default"]
+dependencies = [
+    "cx-Logging>=3.1; sys_platform == \"win32\"",
+    "dmgbuild>=1.6.1; sys_platform == \"darwin\"",
+    "filelock>=3.12.3; sys_platform == \"linux\"",
+    "importlib-metadata>=6; python_full_version < \"3.10.2\"",
+    "lief<0.16.0,>=0.12.0; sys_platform == \"win32\"",
+    "packaging>=24",
+    "patchelf>=0.14; sys_platform == \"linux\" and platform_machine == \"aarch64\"",
+    "patchelf>=0.14; sys_platform == \"linux\" and platform_machine == \"armv7l\"",
+    "patchelf>=0.14; sys_platform == \"linux\" and platform_machine == \"i686\"",
+    "patchelf>=0.14; sys_platform == \"linux\" and platform_machine == \"ppc64le\"",
+    "patchelf>=0.14; sys_platform == \"linux\" and platform_machine == \"s390x\"",
+    "patchelf>=0.14; sys_platform == \"linux\" and platform_machine == \"x86_64\"",
+    "setuptools<75,>=65.6.3",
+    "tomli>=2.0.1; python_version < \"3.11\"",
+    "typing-extensions>=4.10.0; python_version < \"3.10\"",
+]
+files = [
+    {file = "cx_Freeze-7.2.1-cp312-cp312-macosx_10_9_universal2.whl", hash = "sha256:8ca799d6d14c319baa295c3b3655cc3ee92bbd0f8591c4bd8eccddde59f965be"},
+    {file = "cx_Freeze-7.2.1-cp312-cp312-macosx_10_9_x86_64.whl", hash = "sha256:da55d99cf41023b5a1fde39cf8ab77606e4150762557519906483b563e3ee0ae"},
+    {file = "cx_Freeze-7.2.1-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:b967757dc781aa8d19b8dba5671fe17a686a7ebddd3778fac11ce886cb03c717"},
+    {file = "cx_Freeze-7.2.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:dab3a08c454a7062bbe96d9e3be8ca2717efd11e7033de24ba6e20c64a48b3b4"},
+    {file = "cx_Freeze-7.2.1-cp312-cp312-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:c3c24a0fa1a221741aa0eac01a79b3f4ff552342d3294f99279d599994248f9d"},
+    {file = "cx_Freeze-7.2.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:321fa9501c066d8ce0bc46abe4b21bef66c5a97d563e5634e940622d43203532"},
+    {file = "cx_Freeze-7.2.1-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:1d40dd96e6448bb2dd513222542e720db3eedc9e6a9a44f435f410c3847747ac"},
+    {file = "cx_Freeze-7.2.1-cp312-cp312-musllinux_1_2_ppc64le.whl", hash = "sha256:17898d987a62805f368b0a4b8b70a244346e201cd23b3c6fd7ad1e6df4661834"},
+    {file = "cx_Freeze-7.2.1-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:ef33ae6161c9a1259fcd72268fa6f6be2f0cafea88f7bfa9d36bcb7703ae8f5d"},
+    {file = "cx_Freeze-7.2.1-cp312-cp312-win32.whl", hash = "sha256:df4f05f60d1bd0a4605cf0ed62f137416638e11975faaa88770cbc10493c8f45"},
+    {file = "cx_Freeze-7.2.1-cp312-cp312-win_amd64.whl", hash = "sha256:5d40688e8cef7d342961235128dfb1c828ede21993d0a56eda1ddb1cd88c3cec"},
+    {file = "cx_freeze-7.2.1.tar.gz", hash = "sha256:730d5ed75d41b6ef35318ecb8cf345521415ae4108945e8745cf9b446840788e"},
+]
+
+[[package]]
+name = "cx-logging"
+version = "3.2.0"
+requires_python = ">=3.8"
+summary = "Python and C interfaces for logging"
+groups = ["default"]
+marker = "sys_platform == \"win32\""
+files = [
+    {file = "cx_Logging-3.2.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:031fe74ca61bf6084d64e835a7801b3c8d8758737fcadae234ba8b09a16d1368"},
+    {file = "cx_Logging-3.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:2d29550bec4fdd7ce05b23ae6d3539a33060feb24ff39d5cbb89925d59b018b7"},
+    {file = "cx_Logging-3.2.0-cp312-cp312-win32.whl", hash = "sha256:4328097f6034be241e02146af8e199382e7f30019272c26768e4cd3e5122d3f9"},
+    {file = "cx_Logging-3.2.0-cp312-cp312-win_amd64.whl", hash = "sha256:2496386a36f63233fe77e7e68539910b9429df2f922be1af71309be59dca11f3"},
+    {file = "cx_Logging-3.2.0.tar.gz", hash = "sha256:bdbad6d2e6a0cc5bef962a34d7aa1232e88ea9f3541d6e2881675b5e7eab5502"},
+]
+
+[[package]]
+name = "dmgbuild"
+version = "1.6.2"
+requires_python = ">=3.8"
+summary = "macOS command line utility to build disk images"
+groups = ["default"]
+marker = "sys_platform == \"darwin\""
+dependencies = [
+    "ds-store>=1.1.0",
+    "importlib-resources==5.9; python_version <= \"3.8\"",
+    "mac-alias>=2.0.1",
+]
+files = [
+    {file = "dmgbuild-1.6.2-py3-none-any.whl", hash = "sha256:f78200b992027ccd2aa63872ed6ed11464e9149249303b8eee477e65280993d1"},
+    {file = "dmgbuild-1.6.2.tar.gz", hash = "sha256:dba01d29f10c6804f2d72301600ddd03724daa41cd21a95409c44a3e199b19aa"},
+]
+
+[[package]]
+name = "ds-store"
+version = "1.3.1"
+requires_python = ">=3.7"
+summary = "Manipulate Finder .DS_Store files from Python"
+groups = ["default"]
+marker = "sys_platform == \"darwin\""
+dependencies = [
+    "mac-alias>=2.0.1",
+]
+files = [
+    {file = "ds_store-1.3.1-py3-none-any.whl", hash = "sha256:fbacbb0bd5193ab3e66e5a47fff63619f15e374ffbec8ae29744251a6c8f05b5"},
+    {file = "ds_store-1.3.1.tar.gz", hash = "sha256:c27d413caf13c19acb85d75da4752673f1f38267f9eb6ba81b3b5aa99c2d207c"},
+]
+
+[[package]]
+name = "filelock"
+version = "3.16.0"
+requires_python = ">=3.8"
+summary = "A platform independent file lock."
+groups = ["default"]
+marker = "sys_platform == \"linux\""
+files = [
+    {file = "filelock-3.16.0-py3-none-any.whl", hash = "sha256:f6ed4c963184f4c84dd5557ce8fece759a3724b37b80c6c4f20a2f63a4dc6609"},
+    {file = "filelock-3.16.0.tar.gz", hash = "sha256:81de9eb8453c769b63369f87f11131a7ab04e367f8d97ad39dc230daa07e3bec"},
+]
+
+[[package]]
 name = "idna"
 version = "3.8"
 requires_python = ">=3.6"
@@ -56,6 +153,62 @@ groups = ["default"]
 files = [
     {file = "idna-3.8-py3-none-any.whl", hash = "sha256:050b4e5baadcd44d760cedbd2b8e639f2ff89bbc7a5730fcc662954303377aac"},
     {file = "idna-3.8.tar.gz", hash = "sha256:d838c2c0ed6fced7693d5e8ab8e734d5f8fda53a039c0164afb0b82e771e3603"},
+]
+
+[[package]]
+name = "lief"
+version = "0.15.1"
+requires_python = ">=3.8"
+summary = "Library to instrument executable formats"
+groups = ["default"]
+marker = "sys_platform == \"win32\""
+files = [
+    {file = "lief-0.15.1-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:1a96f17c2085ef38d12ad81427ae8a5d6ad76f0bc62a1e1f5fe384255cd2cc94"},
+    {file = "lief-0.15.1-cp312-cp312-macosx_11_0_x86_64.whl", hash = "sha256:d780af1762022b8e01b613253af490afea3864fbd6b5a49c6de7cea8fde0443d"},
+    {file = "lief-0.15.1-cp312-cp312-manylinux_2_28_x86_64.whl", hash = "sha256:d0f10d80202de9634a16786b53ba3a8f54ae8b9a9e124a964d83212444486087"},
+    {file = "lief-0.15.1-cp312-cp312-manylinux_2_33_aarch64.whl", hash = "sha256:864f17ecf1736296e6d5fc38b11983f9d19a5e799f094e21e20d58bfb1b95b80"},
+    {file = "lief-0.15.1-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:c2ec738bcafee8a569741f4a749f0596823b12f10713306c7d0cbbf85759f51c"},
+    {file = "lief-0.15.1-cp312-cp312-win32.whl", hash = "sha256:db38619edf70e27fb3686b8c0f0bec63ad494ac88ab51660c5ecd2720b506e41"},
+    {file = "lief-0.15.1-cp312-cp312-win_amd64.whl", hash = "sha256:28bf0922de5fb74502a29cc47930d3a052df58dc23ab6519fa590e564f194a60"},
+]
+
+[[package]]
+name = "mac-alias"
+version = "2.2.2"
+requires_python = ">=3.7"
+summary = "Generate/parse Mac OS Alias records from Python"
+groups = ["default"]
+marker = "sys_platform == \"darwin\""
+files = [
+    {file = "mac_alias-2.2.2-py3-none-any.whl", hash = "sha256:504ab8ac546f35bbd75ad014d6ad977c426660aa721f2cd3acf3dc2f664141bd"},
+    {file = "mac_alias-2.2.2.tar.gz", hash = "sha256:c99c728eb512e955c11f1a6203a0ffa8883b26549e8afe68804031aa5da856b7"},
+]
+
+[[package]]
+name = "packaging"
+version = "24.1"
+requires_python = ">=3.8"
+summary = "Core utilities for Python packages"
+groups = ["default"]
+files = [
+    {file = "packaging-24.1-py3-none-any.whl", hash = "sha256:5b8f2217dbdbd2f7f384c41c628544e6d52f2d0f53c6d0c3ea61aa5d1d7ff124"},
+    {file = "packaging-24.1.tar.gz", hash = "sha256:026ed72c8ed3fcce5bf8950572258698927fd1dbda10a5e981cdf0ac37f4f002"},
+]
+
+[[package]]
+name = "patchelf"
+version = "0.17.2.1"
+summary = "A small utility to modify the dynamic linker and RPATH of ELF executables."
+groups = ["default"]
+marker = "sys_platform == \"linux\" and (platform_machine == \"aarch64\" or platform_machine == \"armv7l\" or platform_machine == \"i686\" or platform_machine == \"ppc64le\" or platform_machine == \"s390x\" or platform_machine == \"x86_64\")"
+files = [
+    {file = "patchelf-0.17.2.1-py2.py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.musllinux_1_1_aarch64.whl", hash = "sha256:fc329da0e8f628bd836dfb8eaf523547e342351fa8f739bf2b3fe4a6db5a297c"},
+    {file = "patchelf-0.17.2.1-py2.py3-none-manylinux_2_17_armv7l.manylinux2014_armv7l.musllinux_1_1_armv7l.whl", hash = "sha256:ccb266a94edf016efe80151172c26cff8c2ec120a57a1665d257b0442784195d"},
+    {file = "patchelf-0.17.2.1-py2.py3-none-manylinux_2_17_ppc64le.manylinux2014_ppc64le.musllinux_1_1_ppc64le.whl", hash = "sha256:f47b5bdd6885cfb20abdd14c707d26eb6f499a7f52e911865548d4aa43385502"},
+    {file = "patchelf-0.17.2.1-py2.py3-none-manylinux_2_17_s390x.manylinux2014_s390x.musllinux_1_1_s390x.whl", hash = "sha256:a9e6ebb0874a11f7ed56d2380bfaa95f00612b23b15f896583da30c2059fcfa8"},
+    {file = "patchelf-0.17.2.1-py2.py3-none-manylinux_2_5_i686.manylinux1_i686.musllinux_1_1_i686.whl", hash = "sha256:3c8d58f0e4c1929b1c7c45ba8da5a84a8f1aa6a82a46e1cfb2e44a4d40f350e5"},
+    {file = "patchelf-0.17.2.1-py2.py3-none-manylinux_2_5_x86_64.manylinux1_x86_64.musllinux_1_1_x86_64.whl", hash = "sha256:d1a9bc0d4fd80c038523ebdc451a1cce75237cfcc52dbd1aca224578001d5927"},
+    {file = "patchelf-0.17.2.1.tar.gz", hash = "sha256:a6eb0dd452ce4127d0d5e1eb26515e39186fa609364274bc1b0b77539cfa7031"},
 ]
 
 [[package]]
@@ -83,6 +236,17 @@ dependencies = [
 files = [
     {file = "requests-2.32.3-py3-none-any.whl", hash = "sha256:70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6"},
     {file = "requests-2.32.3.tar.gz", hash = "sha256:55365417734eb18255590a9ff9eb97e9e1da868d4ccd6402399eaf68af20a760"},
+]
+
+[[package]]
+name = "setuptools"
+version = "74.1.2"
+requires_python = ">=3.8"
+summary = "Easily download, build, install, upgrade, and uninstall Python packages"
+groups = ["default"]
+files = [
+    {file = "setuptools-74.1.2-py3-none-any.whl", hash = "sha256:5f4c08aa4d3ebcb57a50c33b1b07e94315d7fc7230f7115e47fc99776c8ce308"},
+    {file = "setuptools-74.1.2.tar.gz", hash = "sha256:95b40ed940a1c67eb70fc099094bd6e99c6ee7c23aa2306f4d2697ba7916f9c6"},
 ]
 
 [[package]]
