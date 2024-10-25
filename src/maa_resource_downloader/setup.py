@@ -3,6 +3,7 @@ from cx_Freeze import setup, Executable
 build_exe_options = {
     "includes": ["extract", "read_path", "check_status", "notification"],
     "include_files": ["config.json"],
+    "packages": ["plyer"]
 }
 
 setup(
