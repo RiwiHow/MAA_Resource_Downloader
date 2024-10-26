@@ -26,12 +26,11 @@ def save_config(status):
 def check_status():
     latest_commit = get_latest_commit()
     config = load_config()
-    if config.get("github_status", {}).get("latest_commit") != latest_commit:
+    if config.get("latest_commit") != latest_commit:
         notification.notify(title = 'MAA gets an update', message = 'Update is downloading.', timeout = 10)
 
-        if "github_status" not in config:
-            config['github_status'] = {}
-        config['github_status']['latest_commit'] = latest_commit
+        if "latest_commit" not in config:
+            config['latest_commit'] = latest_commit
         save_config(config)
         return True
 
