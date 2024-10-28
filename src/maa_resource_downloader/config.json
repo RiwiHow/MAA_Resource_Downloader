@@ -4,5 +4,6 @@
   "extract_file_path": "MAA",
   "maa_path": "C:\\Users\\RiwiHow\\AppData\\Local\\Programs\\MAA",
   "annihilation_notification": true,
+  "annihilation_flag": true,
   "latest_commit": "201acbf94bc8df00e1fcbf33fc8ccb8cfd064604"
 }
