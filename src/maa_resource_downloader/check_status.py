@@ -30,7 +30,9 @@ def check_status():
         notification.notify(title = 'MAA gets an update', message = 'Update is downloading.', timeout = 10)
 
         if "latest_commit" not in config:
-            config['latest_commit'] = latest_commit
+            config["latest_commit"] = {}
+
+        config['latest_commit'] = latest_commit
         save_config(config)
         return True
 
