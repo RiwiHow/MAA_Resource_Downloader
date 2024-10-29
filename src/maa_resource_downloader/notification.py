@@ -8,10 +8,13 @@ def save_config(status):
     with open(JSON_FILE, "w") as file:
         json.dump(status, file, indent = 2)
 
-with open("config.json", "r") as file:
-    config = json.load(file)
+def load_config():
+    with open(JSON_FILE, "r") as file:
+        return json.load(file)
 
 def annihilation_notification():
+    config = load_config()
+
     if "annihilation_flag" not in config:
         config["annihilation_flag"] = False
         save_config(config)
