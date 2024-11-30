@@ -5,6 +5,7 @@ from plyer import notification
 
 JSON_FILE = "config.json"
 
+
 def get_latest_commit():
     url = "https://api.github.com/repos/MaaAssistantArknights/MaaResource/branches/main"
     response = requests.get(url)
@@ -13,21 +14,25 @@ def get_latest_commit():
     else:
         raise Exception("Failed to fetch latest commit")
 
+
 def load_config():
     if os.path.exists(JSON_FILE):
         with open(JSON_FILE, "r") as file:
             return json.load(file)
     return {}
 
+
 def save_config(status):
     with open(JSON_FILE, "w") as file:
-        json.dump(status, file, indent = 2)
+        json.dump(status, file, indent=2)
+
 
 def check_status():
     latest_commit = get_latest_commit()
     config = load_config()
     if config.get("latest_commit") != latest_commit:
-        notification.notify(title = 'MAA gets an update', message = 'Update is downloading.', timeout = 10)  # type: ignore
+        notification.notify(title='MAA gets an update',
+                            message='Update is downloading.', timeout=10)  # type: ignore
 
         if "latest_commit" not in config:
             config["latest_commit"] = {}
