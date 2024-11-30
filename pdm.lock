@@ -49,7 +49,7 @@ files = [
 
 [[package]]
 name = "cx-freeze"
-version = "7.2.1"
+version = "7.2.7"
 requires_python = ">=3.8"
 summary = "Create standalone executables from Python scripts"
 groups = ["default"]
@@ -66,23 +66,23 @@ dependencies = [
     "patchelf>=0.14; sys_platform == \"linux\" and platform_machine == \"ppc64le\"",
     "patchelf>=0.14; sys_platform == \"linux\" and platform_machine == \"s390x\"",
     "patchelf>=0.14; sys_platform == \"linux\" and platform_machine == \"x86_64\"",
-    "setuptools<75,>=65.6.3",
+    "setuptools<76,>=65.6.3",
     "tomli>=2.0.1; python_version < \"3.11\"",
     "typing-extensions>=4.10.0; python_version < \"3.10\"",
 ]
 files = [
-    {file = "cx_Freeze-7.2.1-cp312-cp312-macosx_10_9_universal2.whl", hash = "sha256:8ca799d6d14c319baa295c3b3655cc3ee92bbd0f8591c4bd8eccddde59f965be"},
-    {file = "cx_Freeze-7.2.1-cp312-cp312-macosx_10_9_x86_64.whl", hash = "sha256:da55d99cf41023b5a1fde39cf8ab77606e4150762557519906483b563e3ee0ae"},
-    {file = "cx_Freeze-7.2.1-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:b967757dc781aa8d19b8dba5671fe17a686a7ebddd3778fac11ce886cb03c717"},
-    {file = "cx_Freeze-7.2.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:dab3a08c454a7062bbe96d9e3be8ca2717efd11e7033de24ba6e20c64a48b3b4"},
-    {file = "cx_Freeze-7.2.1-cp312-cp312-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:c3c24a0fa1a221741aa0eac01a79b3f4ff552342d3294f99279d599994248f9d"},
-    {file = "cx_Freeze-7.2.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:321fa9501c066d8ce0bc46abe4b21bef66c5a97d563e5634e940622d43203532"},
-    {file = "cx_Freeze-7.2.1-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:1d40dd96e6448bb2dd513222542e720db3eedc9e6a9a44f435f410c3847747ac"},
-    {file = "cx_Freeze-7.2.1-cp312-cp312-musllinux_1_2_ppc64le.whl", hash = "sha256:17898d987a62805f368b0a4b8b70a244346e201cd23b3c6fd7ad1e6df4661834"},
-    {file = "cx_Freeze-7.2.1-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:ef33ae6161c9a1259fcd72268fa6f6be2f0cafea88f7bfa9d36bcb7703ae8f5d"},
-    {file = "cx_Freeze-7.2.1-cp312-cp312-win32.whl", hash = "sha256:df4f05f60d1bd0a4605cf0ed62f137416638e11975faaa88770cbc10493c8f45"},
-    {file = "cx_Freeze-7.2.1-cp312-cp312-win_amd64.whl", hash = "sha256:5d40688e8cef7d342961235128dfb1c828ede21993d0a56eda1ddb1cd88c3cec"},
-    {file = "cx_freeze-7.2.1.tar.gz", hash = "sha256:730d5ed75d41b6ef35318ecb8cf345521415ae4108945e8745cf9b446840788e"},
+    {file = "cx_Freeze-7.2.7-cp312-cp312-macosx_10_13_universal2.whl", hash = "sha256:6e22b449cf401a7d152e97a5feec71b492083067ca0336b74eb988fbfebfb3a6"},
+    {file = "cx_Freeze-7.2.7-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:8611df6e740a7980145f2d6a3d9f9161fe4d6a12c0055da52ccccffe7d77d470"},
+    {file = "cx_Freeze-7.2.7-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:66fa38df2423a3ded9c59a6a089293db3b7a6d3493a701b31d24f97cd29f2143"},
+    {file = "cx_Freeze-7.2.7-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:41c6fd1e77a733fc1a0f4e3678e136726cc45a11b37ff5722ac18afdad703934"},
+    {file = "cx_Freeze-7.2.7-cp312-cp312-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:d00dc0bf7ed9a30491ec34bfb8f4347446afae506febc2afc2531ecbf9db94bf"},
+    {file = "cx_Freeze-7.2.7-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:a5a27b2a1925138e122435ef3d52c281d185a57d1f67e08232ea61be83174cd0"},
+    {file = "cx_Freeze-7.2.7-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:4ef57f4102a658e10704619294180b17a2d6c6595ff3753c9557b05e6a928c7f"},
+    {file = "cx_Freeze-7.2.7-cp312-cp312-musllinux_1_2_ppc64le.whl", hash = "sha256:caa77cbbcb0665c6e5a5b2e31a13b63e99201a8f258244bcfc1aed737484070f"},
+    {file = "cx_Freeze-7.2.7-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:58280540d54fd248120fa9acb1ac9d229fa9b508297f855da05e3f4ed9255a2e"},
+    {file = "cx_Freeze-7.2.7-cp312-cp312-win32.whl", hash = "sha256:344276a8354e4688c20dd3cf70c143d7666f1b93f56532ba9549718c2fac4e56"},
+    {file = "cx_Freeze-7.2.7-cp312-cp312-win_amd64.whl", hash = "sha256:9a727914e702d98648def98626b13864413a4a5d52b8bd7f6f0d8ffaf7b9207f"},
+    {file = "cx_freeze-7.2.7.tar.gz", hash = "sha256:c4d43a4e5357352ac5a89203fda3a8cfadf033d43682f73abbefd3860ce50fb4"},
 ]
 
 [[package]]

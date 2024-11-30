@@ -27,7 +27,7 @@ def check_status():
     latest_commit = get_latest_commit()
     config = load_config()
     if config.get("latest_commit") != latest_commit:
-        notification.notify(title = 'MAA gets an update', message = 'Update is downloading.', timeout = 10)
+        notification.notify(title = 'MAA gets an update', message = 'Update is downloading.', timeout = 10)  # type: ignore
 
         if "latest_commit" not in config:
             config["latest_commit"] = {}
