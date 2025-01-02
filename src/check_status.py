@@ -1,6 +1,6 @@
-import requests
-import json
 import os
+import json
+import requests
 from plyer import notification
 
 JSON_FILE = "config.json"

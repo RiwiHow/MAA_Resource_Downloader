@@ -1,6 +1,7 @@
+import json
 from datetime import datetime
 from plyer import notification
-import json
+
 
 JSON_FILE = "config.json"
 

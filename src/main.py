@@ -1,10 +1,9 @@
-import requests
 import os
 import shutil
-import subprocess
-
 import extract
+import requests
 import read_path
+import subprocess
 import check_status
 import notification
 
